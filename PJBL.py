@@ -1,11 +1,12 @@
 import pandas
+import enderecos
 import matplotlib.pyplot as plt
 
 def gerador(valor,coluna,cont,lista):
     for valor in coluna:
         cont.append(lista.count(valor))
 
-dados = pandas.read_csv(r'C:\Users\andre\Documents\Programação\Python\PJBL', sep=';')
+dados = pandas.read_csv(enderecos.endereco, sep=';')
 
 mtv =['Outro', 'Saúde', 'Visitar', 'Negócios', 'Eventos', 'Estudos', 'Lazer', 'Religião', 'Compras', 'Nao respondeu']
 dias = ['segunda','terca','quarta','quinta','sexta','sabado','domingo']
